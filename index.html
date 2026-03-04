@@ -25,7 +25,7 @@
  </a>
  
  <nav class="hidden lg:flex items-center space-x-8">
- <a href=# class="text-[var(--dark-text-color)] hover:text-[var(--primary-color)] font-medium transition-colors zonas-btn">Zonas de Envío</a>
+ <a href="javascript:void(0)" onclick="abrirModal()" class="text-[var(--dark-text-color)] hover:text-[var(--primary-color)] font-medium transition-colors">Zonas de Envío</a>
  <a href="https://wa.me/5491123561407?text=Hola,%20quiero%20cotizar%20log%C3%ADstica" class="bg-[var(--secondary-button-bg-color)] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[var(--secondary-button-hover-bg-color)] transition-colors">
  Obtener Cotización
  </a>
@@ -83,8 +83,7 @@
  <i class="fa-brands fa-whatsapp mr-2" aria-hidden=true></i>
  Cotizar por WhatsApp
  </a>
- <a href=# class="border-2 border-[var(--primary-color)] text-[var(--primary-color)] text-lg font-semibold px-8 py-4 rounded-lg hover:bg-[var(--primary-color)] hover:text-white transition-all zonas-btn">
- Ver zonas de envío
+<a href="javascript:void(0)" onclick="abrirModal()" class="border-2 border-[var(--primary-color)] text-[var(--primary-color)] text-lg font-semibold px-8 py-4 rounded-lg hover:bg-[var(--primary-color)] hover:text-white transition-all"> Ver zonas de envío
  </a>
  </div>
  </div>
@@ -112,8 +111,19 @@
  </div>
  </div>
  </div>
-</section><div id=zonas-modal class="fixed inset-0 z-[100] items-center justify-center code-section hidden sf-hidden">
- 
+</section><div id="zonas-modal" class="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 hidden">
+
+  <div class="relative">
+
+    <button onclick="cerrarModal()" style="position:absolute; top:-10px; right:-10px; background:white; border-radius:50%; width:30px; height:30px; font-weight:bold; cursor:pointer;">
+      X
+    </button>
+
+    <img src="mapa.png" style="max-width:90vw; max-height:90vh; border-radius:10px;">
+
+  </div>
+
+</div>
  
  
  
@@ -741,3 +751,19 @@
  * License - https://fontawesome.com/license (Commercial License)
  * Copyright 2024 Fonticons, Inc.
  */:host,:root{--fa-style-family-sharp-duotone:"Font Awesome 6 Sharp Duotone";--fa-font-sharp-duotone-thin:normal 100 1em/1"Font Awesome 6 Sharp Duotone"}.fa-sharp-duotone.fa-thin:before,.fasdt:before{position:absolute;color:var(--fa-primary-color,inherit);opacity:var(--fa-primary-opacity,1)}.fa-sharp-duotone.fa-thin:after,.fasdt:after{color:var(--fa-secondary-color,inherit);opacity:var(--fa-secondary-opacity,.4)}.fa-sharp-duotone.fa-swap-opacity:before,.fa-sharp-duotone.fa-thin.fa-swap-opacity:before,.fa-swap-opacity .fa-sharp-duotone.fa-thin:before,.fa-swap-opacity .fasdt:before,.fasdt.fa-swap-opacity:before{opacity:var(--fa-secondary-opacity,.4)}.fa-sharp-duotone.fa-swap-opacity:after,.fa-sharp-duotone.fa-thin.fa-swap-opacity:after,.fa-swap-opacity .fa-sharp-duotone.fa-thin:after,.fa-swap-opacity .fasdt:after,.fasdt.fa-swap-opacity:after{opacity:var(--fa-primary-opacity,1)}</style>
+<div id="zonas-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); z-index:9999; align-items:center; justify-content:center;">
+  <div style="position:relative;">
+    <span onclick="cerrarModal()" style="position:absolute; right:-10px; top:-10px; background:white; border-radius:50%; width:30px; height:30px; display:flex; align-items:center; justify-content:center; cursor:pointer; font-weight:bold;">X</span>
+    <img src="mapa.png" style="max-width:90vw; max-height:90vh; border-radius:10px;">
+  </div>
+</div>
+
+<script>
+function abrirModal(){
+  document.getElementById("zonas-modal").style.display="flex";
+}
+
+function cerrarModal(){
+  document.getElementById("zonas-modal").style.display="none";
+}
+</script>
