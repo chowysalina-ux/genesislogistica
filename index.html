@@ -782,3 +782,22 @@ z-index: 9999;
 </svg>
 
 </a>
+<script>
+document.querySelectorAll(".faq-item h3").forEach((pregunta) => {
+  pregunta.addEventListener("click", () => {
+    const item = pregunta.parentElement;
+    item.classList.toggle("active");
+  });
+});
+</script>
+
+  <style>
+.faq-item p{
+display:none;
+margin-top:10px;
+}
+
+.faq-item.active p{
+display:block;
+}
+</style>
