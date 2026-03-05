@@ -516,70 +516,101 @@
  </div>
  </div>
  </div>
-</section><section id=faq class="code-section py-20 bg-white">
- <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
- <div class="text-center mb-12">
- <h2 class="text-3xl lg:text-4xl font-bold text-[var(--dark-text-color)] mb-4">
- Preguntas Frecuentes
- </h2>
- <p class="text-lg text-[var(--gray-text-color)]">
- Resolvemos tus dudas más comunes
- </p>
- </div>
- <div class=space-y-4 data-landingsite-faq>
- 
- <div class="border border-gray-200 rounded-xl overflow-hidden" data-landingsite-faq-item>
- <button class="w-full px-6 py-4 text-left flex justify-between items-center bg-white hover:bg-gray-50 transition-colors" data-landingsite-faq-question>
- <span class="font-semibold text-[var(--dark-text-color)]">¿Hacen Mercado Flex?</span>
- <i class="fa-regular fa-chevron-down text-[var(--primary-color)] rotate-180" aria-hidden=true></i>
- </button>
- <div class="px-6 py-4 bg-gray-50" data-landingsite-faq-answer>
- <p class=text-[var(--gray-text-color)]>
- Sí, realizamos entregas con servicio Mercado Flex (entregas en el
- mismo día para productos seleccionados).
- </p>
- </div>
- </div>
- 
- <div class="border border-gray-200 rounded-xl overflow-hidden" data-landingsite-faq-item>
- <button class="w-full px-6 py-4 text-left flex justify-between items-center bg-white hover:bg-gray-50 transition-colors" data-landingsite-faq-question>
- <span class="font-semibold text-[var(--dark-text-color)]">¿Entregan en el día?</span>
- <i class="fa-regular fa-chevron-down text-[var(--primary-color)] rotate-180" aria-hidden=true></i>
- </button>
- <div class="px-6 py-4 bg-gray-50" data-landingsite-faq-answer>
- <p class=text-[var(--gray-text-color)]>
- Sí, nuestro servicio same-day garantiza entregas entre 11:00 y 23:00
- hs en el mismo día del retiro.
- </p>
- </div>
- </div>
- 
- <div class="border border-gray-200 rounded-xl overflow-hidden" data-landingsite-faq-item>
- <button class="w-full px-6 py-4 text-left flex justify-between items-center bg-white hover:bg-gray-50 transition-colors" data-landingsite-faq-question>
- <span class="font-semibold text-[var(--dark-text-color)]">¿Tienen tracking en tiempo real?</span>
- <i class="fa-regular fa-chevron-down text-[var(--primary-color)]" aria-hidden=true></i>
- </button>
-<div class="px-6 py-4 bg-gray-50 hidden sf-hidden" data-landingsite-faq-answer>
-<p class="text-[var(--gray-text-color)]">
-Sí. Cada envío cuenta con seguimiento para que puedas saber cuándo fue retirado, en qué etapa del recorrido se encuentra y cuándo se entrega.
-</p>
-</div> 
- </div>
- </div>
- 
- <div class="border border-gray-200 rounded-xl overflow-hidden" data-landingsite-faq-item>
- <button class="w-full px-6 py-4 text-left flex justify-between items-center bg-white hover:bg-gray-50 transition-colors" data-landingsite-faq-question>
- <span class="font-semibold text-[var(--dark-text-color)]">¿Cómo cotizan?</span>
- <i class="fa-regular fa-chevron-down text-[var(--primary-color)]" aria-hidden=true></i>
- </button>
-<div class="px-6 py-4 bg-gray-50 hidden sf-hidden" data-landingsite-faq-answer>
-<p class="text-[var(--gray-text-color)]">
-La cotización se calcula según la distancia, la cantidad de paquetes y la urgencia del envío. Podés pedir tu precio en segundos desde nuestro WhatsApp.
-</p>
-</div> 
- </div>
- </div>
- </div>
+<section class="faq">
+  <h2>Preguntas Frecuentes</h2>
+  <p class="faq-sub">Resolvé tus dudas antes de contratar nuestro servicio</p>
+
+  <div class="faq-item">
+    <button class="faq-question">¿Hacen envíos con Mercado Flex?</button>
+    <div class="faq-answer">
+      Sí. Trabajamos con Mercado Flex realizando entregas el mismo día para productos seleccionados. Nos encargamos del retiro y la entrega para que tu operación sea rápida y eficiente.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">¿Realizan entregas en el día?</button>
+    <div class="faq-answer">
+      Sí. Nuestro servicio same-day permite retirar los paquetes y entregarlos dentro del mismo día, generalmente entre las 11:00 y las 23:00 hs según la zona.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">¿Puedo seguir mi envío?</button>
+    <div class="faq-answer">
+      Sí. Cada envío cuenta con seguimiento para que puedas saber en qué etapa se encuentra tu paquete y confirmar la entrega.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">¿Cómo se calcula el costo del envío?</button>
+    <div class="faq-answer">
+      La cotización se calcula según la distancia, la cantidad de paquetes y la urgencia del servicio. Podés pedir tu cotización rápida por WhatsApp.
+    </div>
+  </div>
+
+</section>
+
+<style>
+
+.faq{
+max-width:900px;
+margin:auto;
+padding:60px 20px;
+}
+
+.faq h2{
+text-align:center;
+margin-bottom:10px;
+}
+
+.faq-sub{
+text-align:center;
+margin-bottom:40px;
+color:#666;
+}
+
+.faq-item{
+border:1px solid #e5e5e5;
+border-radius:10px;
+margin-bottom:15px;
+overflow:hidden;
+}
+
+.faq-question{
+width:100%;
+background:white;
+border:none;
+padding:18px;
+text-align:left;
+font-size:16px;
+font-weight:600;
+cursor:pointer;
+}
+
+.faq-answer{
+display:none;
+padding:18px;
+background:#f7f7f7;
+color:#555;
+line-height:1.5;
+}
+
+.faq-item.active .faq-answer{
+display:block;
+}
+
+</style>
+
+<script>
+
+document.querySelectorAll(".faq-question").forEach(button=>{
+button.addEventListener("click",()=>{
+const item = button.parentElement
+item.classList.toggle("active")
+})
+})
+
+</script>
  
  
  </div>
