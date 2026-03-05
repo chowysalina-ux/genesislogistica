@@ -838,3 +838,30 @@ margin-top:10px;
 display:block;
 }
 </style>
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+const questions = document.querySelectorAll("[data-landingsite-faq-question]")
+
+questions.forEach(question => {
+
+question.addEventListener("click", function () {
+
+const item = this.closest("[data-landingsite-faq-item]")
+const answer = item.querySelector("[data-landingsite-faq-answer]")
+const icon = this.querySelector("i")
+
+answer.classList.toggle("hidden")
+
+if(icon){
+icon.classList.toggle("rotate-180")
+}
+
+})
+
+})
+
+})
+
+</script>
